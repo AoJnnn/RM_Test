@@ -1,0 +1,18 @@
+*** Using Compiler 'V6.24', folder: 'C:\Program Files\Keil5\Keil_v5\ARM\ARMCLANG\Bin'
+Build target '1'
+Note: source file '../Core/Src/gpio.c' - object file renamed from '1\gpio.o' to '1\gpio_1.o'.Note: source file '../Core/Src/gpio.c' - object file renamed from '1\gpio.o' to '1\gpio_1.o'.../Core/Src/main.c(65): error: use of undeclared identifier 'htim3'
+   65 |         if(htim==&htim3)
+      |                   ^
+../Core/Src/main.c(120): error: call to undeclared function 'MX_TIM3_Init'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  120 |   MX_TIM3_Init();
+      |   ^
+../Core/Src/main.c(120): note: did you mean 'MX_TIM2_Init'?
+../Core/Inc\tim.h(41): note: 'MX_TIM2_Init' declared here
+   41 | void MX_TIM2_Init(void);
+      |      ^
+2 errors generated.
+compiling main.c...
+compiling gpio.c...
+"1\1.axf" - 2 Error(s), 0 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:00
